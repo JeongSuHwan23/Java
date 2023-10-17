@@ -34,13 +34,28 @@ class B extends A {
 
 public class TypeCasting {
     public static void main(String[] args) {
+        //작은 풍선을 만들고 작은 풍선을 가리키는 경우
         A aa = new A();
         //toString()은 Object Class로 부터 상속 받은 메서드이다.
         System.out.println(aa.toString());
         System.out.println(aa.m);
         aa.abc();
 
-        B bb = new B();
+        //크고 작은 풍선을 만들고, 작은 풍선을 가리키는 경우
+        A bb = new B();
         System.out.println(bb.toString());
+        System.out.println(bb.m);
+        bb.abc();
+        //bb가 가리키는 작은 풍선 안에 n이 없기 때문에 사용 XX
+        //System.out.println(bb.n);
+        //A였던 bb를 B로 다운캐스팅했다. 즉 큰 풍선을 가리키는 것으로 바꿈
+        System.out.println(((B)bb).n);
+        ((B)bb).bcd();
+
+        B cc = new B();
+        System.out.println(cc.m);
+        System.out.println(cc.n);
+        cc.abc();
+        cc.bcd();
     }
 }
