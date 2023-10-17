@@ -1,0 +1,15 @@
+alt + 1 : 프로젝트 창 열기
+
+ctrl + shift + 방향키 : 줄 위치 이동
+
+ctrl + d : 줄 복사
+
+ctrl + x : 줄 지우기
+
+ctrl + f : 찾기
+
+ctrl + shift + f : 모든 파일에서 찾기
+
+shift * 2 : 지원하는 모든 기능 확인
+
+shift + f10 : 실행
