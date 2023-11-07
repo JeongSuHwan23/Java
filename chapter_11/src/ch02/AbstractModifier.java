@@ -8,7 +8,7 @@ package ch02;
 import java.sql.SQLOutput;
 
 abstract class Animal {
-    abstract void cry(); //cry를 완성시키지 않은 것은 아니다. 역활 : 아무 것도 안 하는 것
+    abstract void cry();
 }
 
 class Cat extends Animal {
