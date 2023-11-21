@@ -28,6 +28,8 @@ public class Multicatch {
     }
     catch (ArithmeticException | NumberFormatException e){
       System.out.println("예외 발생");
+
+
     }
   }
 }
